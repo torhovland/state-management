@@ -69,8 +69,7 @@ const AverageAge = props => {
   const avgAge = averageAge(todos);
   return (
     <div>
-      Average age:{" "}
-      {avgAge === 0 ? "none" : moment.duration(averageAge(todos)).humanize()}
+      Average age: {avgAge === 0 ? "none" : moment.duration(avgAge).humanize()}
     </div>
   );
 };
